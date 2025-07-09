@@ -81,13 +81,6 @@
             renderTodos();
         }
 
-        function editTodo(index) {
-            editingIndex = index;
-            todoInput.value = todos[index];
-            todoInput.focus();
-            todoForm.querySelector('button').textContent = 'Update';
-        }
-
         function deleteTodo(index) {
             // if (confirm('Are you sure you want to delete this task?')) {
             // }
@@ -130,13 +123,6 @@
                         title="Delete"
                         >
                         Delete
-                        </button>
-                        <button 
-                        onclick="editTodo(${index})" 
-                        class="text-blue-500 hover:text-blue-700 px-2 py-1 rounded transition"
-                        title="Edit"
-                        >
-                        ✎
                         </button>
                     </div>
                     `;
